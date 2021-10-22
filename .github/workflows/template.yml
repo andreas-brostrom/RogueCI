@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fail - No license ☠️
-        if: ${{ !startsWith(env.UNITY_EMAIL, 'j' )}}
+        if: ${{ !startsWith(env.UNITY_SERIAL, 'S') }}
         run: exit 1
 
 #  testRunner:
